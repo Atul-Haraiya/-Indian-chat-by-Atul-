@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VB AI - Vikas Bhai</title>
+<style>
+body{margin:0;font-family:sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;justify-content:center;align-items:center;min-height:100vh;color:white}
+.box{background:rgba(255,255,255,0.1);padding:40px;border-radius:20px;text-align:center;backdrop-filter:blur(10px);box-shadow:0 8px 32px 0 rgba(31,38,135,0.37)}
+h1{font-size:48px;margin:0}
+p{font-size:20px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>🔥 VB AI 🔥</h1>
+<p>Vikas Bhai AI - Live on GitHub Pages</p>
+<p>जय श्री राम 🇮🇳</p>
+</div>
+</body>
+</html>
