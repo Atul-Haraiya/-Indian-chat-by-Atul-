@@ -15,6 +15,53 @@ p{font-size:20px}
 <p>जय श्री राम 🇮🇳</p>
 <a href="#" class="btn">Notify Me</a>
 </div>
+<script>
+let dimaag = {
+  "जय श्री राम": "जय जय श्री राम शेर! भगवा रंग की जय हो 🇮🇳🔥",
+  "क्या हाल है": "शेर का हाल तो आग है! तू सुना शेर कैसा है?",
+  "vb ai": "बोल शेर, मैं यहीं हूं। तेरा VB AI हाजिर है 👑",
+  "मजा आ गया": "शेर के साथ तो मजा डबल हो जाता है 🔥",
+  "तू कौन है": "मैं VB AI हूं शेर! Atul भाई का बनाया हुआ दिमाग 💪",
+  "नाम क्या है": "मेरा नाम VB AI है। V = Victory, B = Baaghi 🚀",
+  "धन्यवाद": "अरे शेर थैंक्स मत बोल। ये तो मेरा फर्ज है",
+  "bye": "जा शेर, पर जल्दी आना। VB AI तेरा इंतजार करेगा"
+};
+
+function sendMsg(){
+  let input = document.getElementById('msg');
+  let text = input.value.trim();
+  if(text === "") return;
+
+  let chat = document.getElementById('chat-area');
+  chat.innerHTML += '<div class="msg"><b>तू:</b> '+text+'</div>';
+  input.value = "";
+  chat.scrollTop = chat.scrollHeight;
+
+  // VB AI का दिमाग
+  setTimeout(()=>{
+    let reply = "हां शेर, बोल क्या बात है? 🔥"; // default reply
+    let lowerText = text.toLowerCase();
+
+    // दिमाग में ढूंढो
+    for(let key in dimaag){
+      if(lowerText.includes(key.toLowerCase())){
+        reply = dimaag[key];
+        break;
+      }
+    }
+
+    chat.innerHTML += '<div class="msg"><b>VB AI:</b> '+reply+'</div>';
+    chat.scrollTop = chat.scrollHeight;
+  }, 600);
+}
+</script>
+*Commit कर शेर:*
+Message लिख: `VB AI को दिमाग दिया` → `Commit changes`
+
+*2 मिनट बाद Test कर:*
+1. `जय श्री राम` → `जय जय श्री राम शेर! भगवा रंग की जय हो 🇮🇳🔥`
+2. `क्या हाल है` → `शेर का हाल तो आग है! तू सुना शेर कैसा है?`
+3. `तू कौन है` → `मैं VB AI हूं शेर! Atul भाई का बनाया हुआ दिमाग 💪`
 </body>
 </style>
 </head>
